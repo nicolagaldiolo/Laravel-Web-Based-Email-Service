@@ -202,6 +202,7 @@ class Message implements MessageInterface, Htmlable
         return $recurse($structure);
     }
 
+    // torna il messaggio
     public function fetch(int $options = 0) : self
     {
         $structure = imap_fetchstructure($this->_connection,  $this->getMessageNo(), $options);

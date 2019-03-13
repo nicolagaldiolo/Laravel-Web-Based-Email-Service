@@ -59,6 +59,7 @@ class Client
         return $this;
     }
 
+    // torna l'header del messaggio
     public function getMessage($id, int $options = 0) : \App\Library\Imap\Message\MessageInterface
     {
         $overview = imap_fetch_overview($this->_connection, $id, $options);

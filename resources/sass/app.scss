@@ -1,14 +1,56 @@
+a.nohover {
+  color: #374767
+}
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+a.nohover:hover {
+  color: #374767;
+  text-decoration: none;
+}
 
-// Variables
-@import 'variables';
+.replybox {
+  min-width: 100%
+}
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.messages
+{
+  list-style: none;
+}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.folders
+{
+  list-style: none;
+}
+
+.from
+{
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  color: #374767;
+}
+
+.to
+{
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  color: #374767;
+}
+
+.title
+{
+  margin-top: 30px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.date
+{
+  display: inline-block;
+  width: 29%;
+  text-align: right;
+  float: right;
+  font-size: 12px;
+  margin-top: 18px;
 }
